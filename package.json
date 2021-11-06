@@ -1,0 +1,19 @@
+{
+  "name": "schoolmanagmentsystem-nodejs-postgres",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r     <img src=\"https://raw.githubusercontent.com/caiogondim/javascript-environments-logos/master/node.js/standard/454x128.png\">\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlirezaEbrahimkhani/schoolManagmentSystem-nodejs-postgres.git"
+  },
+  "author": "Alireza Ebrahimkhani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlirezaEbrahimkhani/schoolManagmentSystem-nodejs-postgres/issues"
+  },
+  "homepage": "https://github.com/AlirezaEbrahimkhani/schoolManagmentSystem-nodejs-postgres#readme"
+}

@@ -7,6 +7,9 @@ const colors = require("colors");
 dotenv.config({ path: "./config/config.env" });
 require("./config/db");
 
+// imports routes
+const student = require("./routes/student-route");
+
 const app = express();
 
 // fix access to back-end
@@ -41,6 +44,9 @@ app.use(express.json());
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
+
+// mounts routes
+app.use("/api/student", student);
 
 // start server Configuration
 const PORT = process.env.PORT || 5000;

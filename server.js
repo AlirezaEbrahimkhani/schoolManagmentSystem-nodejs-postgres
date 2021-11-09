@@ -9,6 +9,8 @@ require("./config/db");
 
 // imports routes
 const student = require("./routes/student-route");
+const studentFilter = require("./routes/student-filter-route");
+const requirements = require("./routes/requirement-route");
 
 const app = express();
 
@@ -46,7 +48,9 @@ if (process.env.NODE_ENV === "development") {
 }
 
 // mounts routes
+app.use("/api/student/filter", studentFilter);
 app.use("/api/student", student);
+app.use("/api/requirement", requirements);
 
 // start server Configuration
 const PORT = process.env.PORT || 5000;
